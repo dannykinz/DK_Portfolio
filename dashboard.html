@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <!-- Importants Style Sheets Files -->
+    <link rel="icon" href="/assets/img/Favicon.png">
+    <link rel="stylesheet" href="assets/css/sass_style/styles.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- <script src="assets/js/sessions.js"></script> -->
+    <!-- End of Importants Style Sheets Files -->
+</head>
+
+<body>
+    <header>
+        <nav class="dash-nav">
+            <div class="dash-container layout">
+                <!-- Brand Start -->
+                <div class="dash-brand">
+                    <div class="dash-brand-img"><img class="brand-img img-touch" src="assets/img/DK%20logo%201.png"
+                            alt="DK Logo" />
+                    </div>
+                    <div class="dash-brand-text">
+                        <h1>PortFolio</h1>
+                    </div>
+                </div>
+
+                <div class="dash-toggler">
+                    <img src="/assets/img/HamburgerIcon.svg" alt="Menu Items" class="d-toggler-icon">
+                </div>
+                <div class="brand">
+                    <a href="/"><img class="my-brand img-touch" src="assets/img/DK%20logo%201.png" alt="DK Logo" /></a>
+                </div>
+                <div class="dash-list">
+                    <a href="" class="nav-link">Danny Kinz</a>
+                    <a href="" class="nav-link">Log Out</a>
+                </div>
+                <!-- Nav Links End -->
+        </nav>
+
+        </div>
+    </header>
+
+    <!-- Sidebar Nav -->
+    <div class="dash-sidebar">
+        <div class="sidebar-container side-layout">
+
+            <div class="user-id">
+                <div class="user-img">
+                    <img src="/assets/img/danny kinz.png" alt="" srcset="">
+                </div>
+                <h2 class="user-name">
+                    Danny Kinz
+                </h2>
+                <p class="captions">Main Admin</p>
+            </div>
+
+            <div class="dash-side-links">
+                <a href="" class="nav-link dash-active"><i class='bx bxs-bullseye'></i> Overview</a>
+                <a href="" class="nav-link"><i class='bx bx-sitemap'></i> All Items</a>
+                <a href="" class="nav-link"><i class='bx bxs-carousel'></i> New Port Item</a>
+                <a href='/' onclick="logout()" class="nav-link"><i class='bx bxs-log-out'></i> Log Out</a>
+            </div>
+            
+            <div class="dash-footer">
+                <p>&copy; <span class="yearly"></span> DK Logic. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Nav End -->
+    <section class="main-sec">
+        <div class="contents-items">
+            <h2><i class='bx bxs-bullseye'></i> Overview</h2>
+            <div id="port-items"></div>
+        </div>
+        <div class="dash-items">
+            <div class="stats-layout">
+                <div class="dash-stats">
+                    <h2><i class='bx bxs-briefcase'></i> Portfolio Items</h2>
+                    <p>18</p>
+                </div>
+                <div class="dash-stats">
+                    <h2><i class='bx bxs-traffic-barrier'></i> Daily Traffic</h2>
+                    <p>1,338</p>
+                </div>
+                <div class="dash-stats">
+                    <h2><i class='bx bxs-mouse'></i> Web Clicks</h2>
+                    <p>2,456</p>
+                </div>
+                <div class="dash-stats">
+                    <h2><i class='bx bxs-check-square'></i> Form Submit</h2>
+                    <p>120</p>
+                </div>
+            </div>
+
+            <div class="recent-items">
+                <h2><i class='bx bxs-time-five'></i> Recent Portfolio Items</h2>
+                <div class="item-box">
+                    <div class="item-list">
+                        <img src="/assets/img/Yoga Website Showcase.jpg" alt="" width="150px">
+                        <div class="items-menu">
+                            <h2>Tittle Here</h2>
+                            <a href="" class="icon-box"><i class='bx bxs-book-reader'></i></a>
+                            <a href="" class="icon-box"><i class='bx bxs-edit'></i></a>
+                            <a href="" class="icon-box"><i class='bx bxs-trash-alt'></i></a>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <img src="/assets/img/Yoga Website Showcase.jpg" alt="" width="150px">
+                        <div class="items-menu">
+                            <h2>Tittle Here</h2>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <img src="/assets/img/Yoga Website Showcase.jpg" alt="" width="150px">
+                        <div class="items-menu">
+                            <h2>Tittle Here</h2>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <img src="/assets/img/Yoga Website Showcase.jpg" alt="" width="150px">
+                        <div class="items-menu">
+                            <h2>Tittle Here</h2>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <img src="/assets/img/Yoga Website Showcase.jpg" alt="" width="150px">
+                        <div class="items-menu">
+                            <h2>Tittle Here</h2>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                            <a href="" class="icon-box">icon</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+       <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

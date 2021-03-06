@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <!-- Importants Style Sheets Files -->
+    <link rel="icon" href="/assets/img/Favicon.png">
+    <link rel="stylesheet" href="assets/css/sass_style/styles.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- End of Importants Style Sheets Files -->
+</head>
+
+<body>
+    <header>
+        <nav class="dash-nav">
+            <div class="dash-container layout">
+                <!-- Brand Start -->
+                <div class="left-dash-brand">
+                    <div class="dash-brand">
+                        <div class="dash-brand-img"><img class="brand-img img-touch" src="assets/img/DK%20logo%201.png"
+                                alt="DK Logo" />
+                        </div>
+                        <div class="dash-brand-text">
+                            <h1>PortFolio</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-list">
+                    <a href="/new-item.html" class="nav-link"><i class='bx bxs-pencil'></i> New Item</a>
+                    <a href="" class="nav-link"><i class='bx bxs-user-circle'></i> Danny Kinz</a>
+                    <a href="" class="nav-link"><i class='bx bxs-log-out'></i> Log Out</a>
+                </div>
+                <!-- Nav Links End -->
+        </nav>
+
+        </div>
+    </header>
+
+    <!-- Sidebar Nav -->
+    <div class="dash-sidebar">
+        <div class="sidebar-container side-layout">
+            <div class="dash-toggler">
+                <img src="/assets/img/HamburgerIcon.svg" alt="Menu Items" class="d-toggler-icon">
+            </div>
+            <div class="user-id">
+                <div class="user-img">
+                    <img src="/assets/img/danny kinz.png" alt="" srcset="">
+                </div>
+                <h2 class="user-name">
+                    Danny Kinz
+                </h2>
+                <p class="captions">Main Admin</p>
+            </div>
+
+            <div class="dash-side-links">
+                <a href="" class="nav-link"><i class='bx bxs-bullseye'></i> Overview</a>
+                <a href="" class="nav-link"><i class='bx bx-sitemap'></i> All Items</a>
+                <a href="" class="nav-link dash-active"><i class='bx bxs-carousel'></i> New Port Item</a>
+                <a href="" class="nav-link"><i class='bx bxs-log-out'></i> Log Out</a>
+            </div>
+
+            <div class="dash-footer">
+                <p>&copy; <span class="yearly"></span> DK Logic. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Nav End -->
+    <main class="main-contents">
+        <section class="">
+            <div class="dash-items">
+                <div class="contents-items">
+                    <h2><i class='bx bxs-folder-open'></i> New Portfolio Item</h2>
+                </div>
+                <div id="port-items">
+                    <form method="POST" id="portfolioPosts" class="portfolio-input">
+                        <div class="post-form">
+                            <input type="text" id="title" name="item-title" placeholder="Portfolio Item Title"
+                                class="post-input" />
+                        </div>
+                        <div class="post-form">
+                            <textarea name="item-desription" id="description" cols="0" rows="5"
+                                placeholder="Portfolio Item Desription" class="post-input"></textarea>
+                        </div>
+                        <div class="post-form">
+                            <input type="url" id="url" name="item-link" placeholder="Portfolio Live URL" class="post-input">
+                        </div>
+                        <div class="post-form">
+                            <div class="file-input">
+                                <button class="file-btn"><i class='bx bx-upload'></i> Choose Cover Img</button>
+                                <input type="file" id="portfolioCover" name="cover-img" />
+                            </div>
+                        </div>
+                        <div class="sub-center">
+                            <input type="submit" id="addPortItem" value="Post Item" class="main-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contents-items">
+                <div id="progressHandler">
+                    <p>Updating Your Portfolio... Please wait a little..</p>
+                    <progress id="progressBar" value="" max="100"></progress>
+                </div><br>
+                <h2><i class='bx bxs-folder-open'></i> Recent Update Item</h2>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque recusandae delectus amet nihil hic quas
+                adipisci
+                necessitatibus, repellat tenetur officiis facere sit. Et ut nam tenetur consequuntur nihil distinctio
+                labore.</p>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-storage.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

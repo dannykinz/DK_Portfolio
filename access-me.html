@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DK Portfolio</title>
+    <link rel="stylesheet" href="assets/css/sass_style/styles.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+</head>
+
+<body>
+    <section class="login-sec">
+        <div class="form-container layout">
+            <div class="login-form">
+                <div class="form-cover">
+                    <div class="copyid">
+                        <img class="login-logo" src="assets/img/DK%20logo%201.png">
+                        <h2>Access My Dashboard</h2>
+                        <p>Input the necessary credentials to access m dashboard!</p>
+                    </div>
+                    <form class="login-form">
+                        <input class="login-input" type="text" placeholder="Email Address" id="email" />
+                        <input class="login-input" type="password" placeholder="Passkey" id="password" />
+                        <!-- <div class="form-check"><input class="form-check" type="checkbox" id="formCheck-1"><label
+                                for="formCheck-1">&nbsp; Remember This
+                                Login!</label></div> -->
+                        <div class="submit-btn">
+                            <button type="button" onclick="access()" class="main-btn">Gain
+                                Access &nbsp;<i class='bx bxs-paper-plane'></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-auth.js"></script>
+       <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
